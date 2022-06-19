@@ -12,8 +12,7 @@ let db = mongoose.connection;
 db.once('open',()=>{
   console.log("Mongodb is connected succesfully")
 })
-
-
+/*To listen to the port*/
 app.listen(port, () => {
   console.log(`Listening to port ${port}`);
 });
